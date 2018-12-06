@@ -62,6 +62,9 @@ public class testSelectionSort {
         Sortedarr[2] = 0;
         Sortedarr[3] = 2;
         Sortedarr[4] = 8;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** Test data contains with both positive, negative and zeros **/
     }
     public void testDuplicates(){
@@ -77,6 +80,9 @@ public class testSelectionSort {
         Sortedarr[2] = 7;
         Sortedarr[3] = 8;
         Sortedarr[4] = 8;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** Test data contains duplicates **/
     }
 }
