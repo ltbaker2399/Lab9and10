@@ -1,9 +1,10 @@
 import static org.junit.Assert.*;
-import org.junit.Assert;
 import org.junit.Test;
+
 public class testSelectionSort {
+	private  SelectionSort test1;
 	@Test
-	public void test() 
+	public void test()
 	{
 		testPositive();
 		testNegative();
@@ -25,6 +26,9 @@ public class testSelectionSort {
         Sortedarr[2] = 8;
         Sortedarr[3] = 9;
         Sortedarr[4] = 10;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** add tests to check for this unit test **/
     }
     public void testNegative(){
@@ -40,6 +44,9 @@ public class testSelectionSort {
         Sortedarr[2] = -8;
         Sortedarr[3] = -9;
         Sortedarr[4] = -10;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** Test data contains negative values only **/
     }
     public void testMixed(){
@@ -55,6 +62,9 @@ public class testSelectionSort {
         Sortedarr[2] = 8;
         Sortedarr[3] = 0;
         Sortedarr[4] = -10;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** Test data contains with both positive, negative and zeros **/
     }
     public void testDuplicates(){
@@ -70,6 +80,9 @@ public class testSelectionSort {
         Sortedarr[2] = 7;
         Sortedarr[3] = -10;
         Sortedarr[4] = 2;
+				SelectionSort test1 = new SelectionSort();
+	     	arr = test1.basicSelectionSort(arr);
+	      assertArrayEquals(arr, Sortedarr);
         /** Test data contains duplicates **/
     }
 }
